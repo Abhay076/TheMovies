@@ -5,8 +5,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "client-install": "cd ../client && npm install && npm run build",
-    "start": "node index.js",
+    "client-install": "npm install && cd ../client && npm install && npm run build",
+    "start": "npm install && node index.js",
     "watch": "nodemon index.js"
   },
   "dependencies": {
