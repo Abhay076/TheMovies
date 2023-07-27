@@ -1,0 +1,20 @@
+{
+  "name": "mern-movie",
+  "version": "1.0.0",
+  "description": "my mern project",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "server-install":"cd server && npm install",
+    "server": "npm run watch --prefix server",
+    "client":"npm run start --prefix client",
+    "dev":"concurrently \"npm run client\" \"npm run server\"",
+    "kick":"concurrently \"npm run client-install \" \"npm run server-install\""
+
+  },
+  "keywords": [
+    "mern app"
+  ],
+  "author": "Abhay",
+  "license": "ISC"
+}
